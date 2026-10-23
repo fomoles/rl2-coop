@@ -1,0 +1,24 @@
+[Info   :   BepInEx] Loading [RL2 Co-op 0.1.0]
+[Info   : RL2 Co-op] RL2 Co-op ready. Press F8 in game to host or join.
+[Info   : RL2 Co-op] Scene: Splash
+[Info   : RL2 Co-op] AutoStart: join
+[Info   : RL2 Co-op] Connecting to localhost:26950…
+[Info   : RL2 Co-op] looking up localhost
+[Info   : RL2 Co-op] connecting to localhost (127.0.0.1):26950
+[Info   : RL2 Co-op] joined as #1; 1 other player(s); run in progress
+[Info   : RL2 Co-op] Joined as player 2
+[Info   : RL2 Co-op] Host joined
+[Info   : RL2 Co-op] Next castle will be built from the host's seed 7E8BD3CF. Enter the castle from the manor.
+[Info   : RL2 Co-op] Scene: Disclaimer
+[Warning: RL2 Co-op] Move to room 3164893 waiting for over 5 s (transition False, hero False)
+[Info   : RL2 Co-op] Scene: MainMenu
+[Info   : RL2 Co-op] AutoPlay: pressing Continue on the main menu
+[Info   : RL2 Co-op] Scene: World
+[Info   : RL2 Co-op] Showing Host (#1)
+[Info   : RL2 Co-op] Room 3164893: 0 enemies, moved by the host
+[Info   : RL2 Co-op] Moving to room 3183949 at 7.5,-1.0
+[Info   : RL2 Co-op] Room 3183949: 2 enemies, moved by the host
+[Info   : RL2 Co-op] Hit on enemy 2 for 30 sent to the host
+[Info   : RL2 Co-op] Host says enemy 2 died
+[Info   : RL2 Co-op] Hit on enemy 1 for 30 sent to the host
+[Info   : RL2 Co-op] Host says enemy 1 died

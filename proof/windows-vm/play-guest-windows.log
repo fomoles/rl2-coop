@@ -1,0 +1,38 @@
+[Message:   BepInEx] BepInEx 5.4.23.5 - Rogue Legacy 2 (10/23/2026 3:37:36 PM)
+[Info   :   BepInEx] Running under Unity v2020.3.47.6223093
+[Info   :   BepInEx] CLR runtime version: 4.0.30319.42000
+[Info   :   BepInEx] Supports SRE: True
+[Info   :   BepInEx] System platform: Bits64, Windows
+[Message:   BepInEx] Preloader started
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.Preloader 5.4.23.5]
+[Info   :   BepInEx] 1 patcher plugin loaded
+[Info   :   BepInEx] Patching [UnityEngine.CoreModule] with [BepInEx.Chainloader]
+[Message:   BepInEx] Preloader finished
+[Message:   BepInEx] Chainloader ready
+[Message:   BepInEx] Chainloader started
+[Info   :   BepInEx] 1 plugin to load
+[Info   :   BepInEx] Loading [RL2 Co-op 0.1.0]
+[Info   : RL2 Co-op] RL2 Co-op ready. Press F8 in game to host or join.
+[Message:   BepInEx] Chainloader startup complete
+[Info   : RL2 Co-op] Scene: Splash
+[Info   : RL2 Co-op] AutoStart: join
+[Info   : RL2 Co-op] Connecting to 192.168.64.1:26950…
+[Info   : RL2 Co-op] connecting to 192.168.64.1:26950
+[Info   : RL2 Co-op] joined as #1; 1 other player(s); run in progress
+[Info   : RL2 Co-op] Joined as player 2
+[Info   : RL2 Co-op] Host joined
+[Info   : RL2 Co-op] Next castle will be built from the host's seed 7E8BD3CF. Enter the castle from the manor.
+[Warning: RL2 Co-op] Move to room 3164893 waiting for over 5 s (transition False, hero False)
+[Info   : RL2 Co-op] Scene: Disclaimer
+[Info   : RL2 Co-op] Scene: MainMenu
+[Info   : RL2 Co-op] AutoPlay: pressing Continue on the main menu
+[Info   : RL2 Co-op] Scene: World
+[Info   : RL2 Co-op] Showing Host (#1)
+[Info   : RL2 Co-op] Room 3164893: 0 enemies, moved by the host
+[Info   : RL2 Co-op] Moving to room 3183949 at 7.5,-1.0
+[Info   : RL2 Co-op] Room 3183949: 2 enemies, moved by the host
+[Info   : RL2 Co-op] Hit on enemy 2 for 41 sent to the host
+[Info   : RL2 Co-op] Host says enemy 2 died
+[Info   : RL2 Co-op] Hit on enemy 1 for 30 sent to the host
+[Info   : RL2 Co-op] Host says enemy 1 died
+[Info   : RL2 Co-op] disconnected: LocalQuit: you left the session

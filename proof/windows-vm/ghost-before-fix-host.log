@@ -1,0 +1,34 @@
+[Message:   BepInEx] BepInEx 5.4.23.5 - Rogue Legacy 2 (10/23/2026 4:02:44 AM)
+[Info   :   BepInEx] Running under Unity vUnknown (post-2017)
+[Info   :   BepInEx] CLR runtime version: 4.0.30319.42000
+[Info   :   BepInEx] Supports SRE: True
+[Info   :   BepInEx] System platform: Bits64, iOS
+[Message:   BepInEx] Preloader started
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.Preloader 5.4.23.5]
+[Info   :   BepInEx] 1 patcher plugin loaded
+[Info   :   BepInEx] Patching [UnityEngine.CoreModule] with [BepInEx.Chainloader]
+[Message:   BepInEx] Preloader finished
+[Info   :   BepInEx] Detected Unity version: v2020.3.47f1
+[Message:   BepInEx] Chainloader ready
+[Message:   BepInEx] Chainloader started
+[Info   :   BepInEx] 1 plugin to load
+[Info   :   BepInEx] Loading [RL2 Co-op 0.1.0]
+[Info   : RL2 Co-op] RL2 Co-op ready. Press F8 in game to host or join.
+[Message:   BepInEx] Chainloader startup complete
+[Info   : RL2 Co-op] Scene: Splash
+[Info   : RL2 Co-op] AutoStart: host
+[Info   : RL2 Co-op] hosting on UDP port 26950
+[Info   : RL2 Co-op] Hosting on port 26950
+[Info   : RL2 Co-op] Scene: Disclaimer
+[Info   : RL2 Co-op] Scene: MainMenu
+[Info   : RL2 Co-op] AutoPlay: pressing Continue on the main menu
+[Info   : RL2 Co-op] Scene: World
+[Info   : RL2 Co-op] run started, seed 2123092943
+[Info   : RL2 Co-op] Room 3164893: 0 enemies
+[Info   : RL2 Co-op] #1 Windows joined from 192.168.64.2:52158
+[Info   : RL2 Co-op] Windows joined
+[Info   : RL2 Co-op] #2 Windows joined from 192.168.64.2:50776
+[Info   : RL2 Co-op] Windows joined
+[Info   : RL2 Co-op] Showing Windows (#3)
+[Info   : RL2 Co-op] #2 Windows left (Timeout)
+[Info   : RL2 Co-op] Windows lost connection

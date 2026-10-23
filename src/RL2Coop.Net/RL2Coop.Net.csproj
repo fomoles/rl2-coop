@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    Game-independent multiplayer core: transport, wire protocol, sessions,
+    clock sync and interpolation. No UnityEngine and no game references, so it
+    is unit-tested on plain .NET (net8.0) and shipped into the game as net472.
+  -->
+  <PropertyGroup>
+    <TargetFrameworks>net472;net8.0</TargetFrameworks>
+    <RootNamespace>RL2Coop.Net</RootNamespace>
+    <AssemblyName>RL2Coop.Net</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>$(DefineConstants);LITENETLIB_UNSAFE;RL2COOP_SIMULATE</DefineConstants>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591;CS0618</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- LiteNetLib is compiled in (see third_party/LiteNetLib/VENDORED.md). -->
+    <Compile Include="../../third_party/LiteNetLib/**/*.cs" Link="ThirdParty/LiteNetLib/%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net472'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="RL2Coop.Net.Tests" />
+  </ItemGroup>
+</Project>

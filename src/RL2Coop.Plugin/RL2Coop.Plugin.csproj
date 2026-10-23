@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    The BepInEx plugin: config, overlay, the per-frame driver and the Rogue
+    Legacy 2 adapter.
+
+    BepInEx and Unity come from the BepInEx NuGet feed (see nuget.config), as
+    compile-time references only. The game's own Assembly-CSharp.dll is never
+    redistributed: point ManagedDir at your install and the adapter under RL2/
+    is compiled in. Without it the plugin still builds (to check the overlay
+    and config), but has no game to talk to.
+
+      dotnet build src/RL2Coop.Plugin -p:ManagedDir="/path/to/Rogue Legacy 2.app/Contents/Resources/Data/Managed"
+  -->
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>RL2Coop</AssemblyName>
+    <RootNamespace>RL2Coop.Plugin</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <ManagedDir Condition="'$(ManagedDir)' == ''">$(HOME)/Library/Application Support/Steam/steamapps/common/Rogue Legacy 2/RogueLegacy2.app/Contents/Resources/Data/Managed</ManagedDir>
+    <HasGame Condition="Exists('$(ManagedDir)/Assembly-CSharp.dll')">true</HasGame>
+    <DefineConstants Condition="'$(HasGame)' == 'true'">$(DefineConstants);RL2_GAME</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Core" Version="5.4.21" PrivateAssets="all" ExcludeAssets="runtime" />
+    <!-- Compile-only Unity reference assemblies. The exact Unity version of the game is checked on install (TESTING.md). -->
+    <PackageReference Include="UnityEngine.Modules" Version="2020.3.48" PrivateAssets="all" ExcludeAssets="runtime" />
+    <ProjectReference Include="../RL2Coop.Net/RL2Coop.Net.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(HasGame)' == 'true'">
+    <Reference Include="Assembly-CSharp" HintPath="$(ManagedDir)/Assembly-CSharp.dll" Private="false" />
+    <Reference Include="Rewired_Core" HintPath="$(ManagedDir)/Rewired_Core.dll" Private="false" />
+    <Reference Include="Assembly-CSharp-firstpass" HintPath="$(ManagedDir)/Assembly-CSharp-firstpass.dll" Private="false" />
+    <Reference Include="Cinemachine" HintPath="$(ManagedDir)/Cinemachine.dll" Private="false" />
+    <Reference Include="CorgiEngine_Assembled" HintPath="$(ManagedDir)/CorgiEngine_Assembled.dll" Private="false" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(HasGame)' != 'true'">
+    <Compile Remove="RL2/**" />
+    <None Include="RL2/**" />
+  </ItemGroup>
+
+  <Target Name="ReportGame" BeforeTargets="Build">
+    <Message Importance="high" Condition="'$(HasGame)' == 'true'" Text="RL2Coop: building against the game in $(ManagedDir)" />
+    <Message Importance="high" Condition="'$(HasGame)' != 'true'" Text="RL2Coop: game not found at $(ManagedDir); building without the game adapter" />
+  </Target>
+</Project>

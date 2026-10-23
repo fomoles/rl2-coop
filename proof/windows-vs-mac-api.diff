@@ -1,0 +1,111 @@
+24865a24866
+> Assembly-CSharp M GameResolutionManager :: Field System.Collections.Generic.List`1[GameResolutionManager+DisplayInfo] m_displayInfoList
+24868a24870,24874
+> Assembly-CSharp M GameResolutionManager :: Method System.Boolean EnumDisplayMonitors(System.IntPtr, System.IntPtr, GameResolutionManager+MonitorEnumDelegate, System.IntPtr)
+> Assembly-CSharp M GameResolutionManager :: Method System.Boolean GetMonitorInfo(System.IntPtr, GameResolutionManager+MONITORINFOEX)
+> Assembly-CSharp M GameResolutionManager :: Method System.Boolean GetWindowRect(System.IntPtr, GameResolutionManager+RECT&)
+> Assembly-CSharp M GameResolutionManager :: Method System.Collections.Generic.List`1[GameResolutionManager+DisplayInfo] GetDisplays()
+> Assembly-CSharp M GameResolutionManager :: Method System.Collections.IEnumerator MoveWindowFullscreenCoroutine(System.Int32)
+24869a24876,24880
+> Assembly-CSharp M GameResolutionManager :: Method System.IntPtr GetActiveWindow()
+> Assembly-CSharp M GameResolutionManager :: Method System.IntPtr MonitorFromPoint(GameResolutionManager+POINTSTRUCT, System.Int32)
+> Assembly-CSharp M GameResolutionManager :: Method System.Void MoveToDisplay(System.Int32, System.Int32, System.Int32, System.Int32)
+> Assembly-CSharp M GameResolutionManager :: Method System.Void MoveWindow(System.IntPtr, System.Int32, System.Int32, System.Int32, System.Int32, System.Boolean)
+> Assembly-CSharp M GameResolutionManager :: Method System.Void SetPrimaryDisplay(System.Int32)
+24876a24888,24894
+> Assembly-CSharp M GameResolutionManager :: NestedType GameResolutionManager+<>c
+> Assembly-CSharp M GameResolutionManager :: NestedType GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26
+> Assembly-CSharp M GameResolutionManager :: NestedType GameResolutionManager+DisplayInfo
+> Assembly-CSharp M GameResolutionManager :: NestedType GameResolutionManager+MONITORINFOEX
+> Assembly-CSharp M GameResolutionManager :: NestedType GameResolutionManager+MonitorEnumDelegate
+> Assembly-CSharp M GameResolutionManager :: NestedType GameResolutionManager+POINTSTRUCT
+> Assembly-CSharp M GameResolutionManager :: NestedType GameResolutionManager+RECT
+24879a24898,24954
+> Assembly-CSharp M GameResolutionManager+<>c :: Constructor System.Void .cctor()
+> Assembly-CSharp M GameResolutionManager+<>c :: Constructor System.Void .ctor()
+> Assembly-CSharp M GameResolutionManager+<>c :: Field GameResolutionManager+<>c <>9
+> Assembly-CSharp M GameResolutionManager+<>c :: Field GameResolutionManager+MonitorEnumDelegate <>9__28_0
+> Assembly-CSharp M GameResolutionManager+<>c :: Method System.Boolean <GetDisplays>b__28_0(System.IntPtr, System.IntPtr, GameResolutionManager+RECT&, System.IntPtr)
+> Assembly-CSharp M GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26 :: Constructor System.Void .ctor(System.Int32)
+> Assembly-CSharp M GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26 :: Field System.Int32 <>1__state
+> Assembly-CSharp M GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26 :: Field System.Int32 <screenHeight>5__3
+> Assembly-CSharp M GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26 :: Field System.Int32 <screenWidth>5__2
+> Assembly-CSharp M GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26 :: Field System.Int32 displayIndex
+> Assembly-CSharp M GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26 :: Field System.Object <>2__current
+> Assembly-CSharp M GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26 :: Field System.Single <delay>5__4
+> Assembly-CSharp M GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26 :: Method System.Boolean MoveNext()
+> Assembly-CSharp M GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26 :: Method System.Object System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+> Assembly-CSharp M GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26 :: Method System.Object System.Collections.IEnumerator.get_Current()
+> Assembly-CSharp M GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26 :: Method System.Void System.Collections.IEnumerator.Reset()
+> Assembly-CSharp M GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26 :: Method System.Void System.IDisposable.Dispose()
+> Assembly-CSharp M GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26 :: Property System.Object System.Collections.Generic.IEnumerator<System.Object>.Current
+> Assembly-CSharp M GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26 :: Property System.Object System.Collections.IEnumerator.Current
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Constructor System.Void .ctor()
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Field GameResolutionManager+RECT <MonitorArea>k__BackingField
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Field GameResolutionManager+RECT <WorkArea>k__BackingField
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Field System.Int32 <ScreenHeight>k__BackingField
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Field System.Int32 <ScreenWidth>k__BackingField
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Field System.String <Availability>k__BackingField
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Method GameResolutionManager+RECT get_MonitorArea()
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Method GameResolutionManager+RECT get_WorkArea()
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Method System.Int32 get_ScreenHeight()
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Method System.Int32 get_ScreenWidth()
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Method System.String get_Availability()
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Method System.Void set_Availability(System.String)
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Method System.Void set_MonitorArea(GameResolutionManager+RECT)
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Method System.Void set_ScreenHeight(System.Int32)
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Method System.Void set_ScreenWidth(System.Int32)
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Method System.Void set_WorkArea(GameResolutionManager+RECT)
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Property GameResolutionManager+RECT MonitorArea
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Property GameResolutionManager+RECT WorkArea
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Property System.Int32 ScreenHeight
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Property System.Int32 ScreenWidth
+> Assembly-CSharp M GameResolutionManager+DisplayInfo :: Property System.String Availability
+> Assembly-CSharp M GameResolutionManager+MONITORINFOEX :: Constructor System.Void .ctor()
+> Assembly-CSharp M GameResolutionManager+MONITORINFOEX :: Field GameResolutionManager+RECT rcMonitor
+> Assembly-CSharp M GameResolutionManager+MONITORINFOEX :: Field GameResolutionManager+RECT rcWork
+> Assembly-CSharp M GameResolutionManager+MONITORINFOEX :: Field System.Char[] szDevice
+> Assembly-CSharp M GameResolutionManager+MONITORINFOEX :: Field System.Int32 cbSize
+> Assembly-CSharp M GameResolutionManager+MONITORINFOEX :: Field System.Int32 dwFlags
+> Assembly-CSharp M GameResolutionManager+MonitorEnumDelegate :: Constructor System.Void .ctor(System.Object, System.IntPtr)
+> Assembly-CSharp M GameResolutionManager+MonitorEnumDelegate :: Method System.Boolean EndInvoke(GameResolutionManager+RECT&, System.IAsyncResult)
+> Assembly-CSharp M GameResolutionManager+MonitorEnumDelegate :: Method System.Boolean Invoke(System.IntPtr, System.IntPtr, GameResolutionManager+RECT&, System.IntPtr)
+> Assembly-CSharp M GameResolutionManager+MonitorEnumDelegate :: Method System.IAsyncResult BeginInvoke(System.IntPtr, System.IntPtr, GameResolutionManager+RECT&, System.IntPtr, System.AsyncCallback, System.Object)
+> Assembly-CSharp M GameResolutionManager+POINTSTRUCT :: Constructor System.Void .ctor(System.Int32, System.Int32)
+> Assembly-CSharp M GameResolutionManager+POINTSTRUCT :: Field System.Int32 x
+> Assembly-CSharp M GameResolutionManager+POINTSTRUCT :: Field System.Int32 y
+> Assembly-CSharp M GameResolutionManager+RECT :: Field System.Int32 bottom
+> Assembly-CSharp M GameResolutionManager+RECT :: Field System.Int32 left
+> Assembly-CSharp M GameResolutionManager+RECT :: Field System.Int32 right
+> Assembly-CSharp M GameResolutionManager+RECT :: Field System.Int32 top
+31953a32029
+> Assembly-CSharp M MainMenuWindowController :: Constructor System.Void .cctor()
+31986a32063
+> Assembly-CSharp M MainMenuWindowController :: Field System.Boolean m_hasEverHadFocus
+32019a32097,32098
+> Assembly-CSharp M MainMenuWindowController :: Method System.Int32 GetWindowThreadProcessId(System.IntPtr, System.Int32&)
+> Assembly-CSharp M MainMenuWindowController :: Method System.IntPtr GetForegroundWindow()
+67671a67751,67757
+> Assembly-CSharp T GameResolutionManager+<>c : System.Object
+> Assembly-CSharp T GameResolutionManager+<MoveWindowFullscreenCoroutine>d__26 : System.Object
+> Assembly-CSharp T GameResolutionManager+DisplayInfo : System.Object
+> Assembly-CSharp T GameResolutionManager+MONITORINFOEX : System.Object
+> Assembly-CSharp T GameResolutionManager+MonitorEnumDelegate : System.MulticastDelegate
+> Assembly-CSharp T GameResolutionManager+POINTSTRUCT : System.ValueType
+> Assembly-CSharp T GameResolutionManager+RECT : System.ValueType
+73045,73046c73131,73132
+< Assembly-CSharp-firstpass M Steamworks.NativeMethods :: Field System.String NativeLibraryName = steam_api
+< Assembly-CSharp-firstpass M Steamworks.NativeMethods :: Field System.String NativeLibrary_SDKEncryptedAppTicket = sdkencryptedappticket
+---
+> Assembly-CSharp-firstpass M Steamworks.NativeMethods :: Field System.String NativeLibraryName = steam_api64
+> Assembly-CSharp-firstpass M Steamworks.NativeMethods :: Field System.String NativeLibrary_SDKEncryptedAppTicket = sdkencryptedappticket64
+73879c73965
+< Assembly-CSharp-firstpass M Steamworks.Packsize :: Field System.Int32 value = 4
+---
+> Assembly-CSharp-firstpass M Steamworks.Packsize :: Field System.Int32 value = 8
+125352a125439
+> UnityEngine.CoreModule M UnityEngine.Windows.WebCam.PhotoCaptureFrame :: Method System.Boolean GetHasLocationData()
+125356a125444
+> UnityEngine.CoreModule M UnityEngine.Windows.WebCam.PhotoCaptureFrame :: Method System.Int32 GetDataLength()
+125373a125462
+> UnityEngine.CoreModule M UnityEngine.Windows.WebCam.PhotoCaptureFrame :: Method UnityEngine.Windows.WebCam.CapturePixelFormat GetCapturePixelFormat()

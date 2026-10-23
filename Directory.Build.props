@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Deterministic>true</Deterministic>
+    <Version>0.1.0</Version>
+    <Authors>fomoles</Authors>
+    <Product>RL2 Co-op</Product>
+  </PropertyGroup>
+</Project>
