@@ -21,6 +21,9 @@ An unofficial, free [BepInEx](https://github.com/BepInEx/BepInEx) mod that lets
 It ships none of the game's files. Every player needs their own copy of
 Rogue Legacy 2.
 
+Download: [Nexus Mods](https://www.nexusmods.com/roguelegacy2/mods/54) or the
+releases on this page.
+
 *Unofficial and not affiliated with Cellar Door Games.*
 
 ## Status
